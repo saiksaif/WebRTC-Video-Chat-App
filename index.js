@@ -15,6 +15,8 @@ io.on('connection', function(socket) {
 
     socket.on('join', function(roomName) {
         var rooms = io.sockets.adapter.rooms;
+        console.log(rooms);
         var room = rooms.get(roomName);
+        console.log(room);
     });
 });
